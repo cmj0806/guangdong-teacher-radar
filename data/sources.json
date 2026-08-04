@@ -1,0 +1,90 @@
+[
+  {
+    "id": "gdpi",
+    "school": "广东开放大学（广东理工职业学院）",
+    "schoolLevel": "高职院校",
+    "city": "广州",
+    "ownership": "公办",
+    "url": "https://www.gdpi.edu.cn/rczp.htm",
+    "lastChecked": "2026-08-04T13:18:56.768Z",
+    "health": "正常",
+    "message": "发现 2 个招聘公告链接"
+  },
+  {
+    "id": "gtcfla",
+    "school": "广东省外语艺术职业学院",
+    "schoolLevel": "高职院校",
+    "city": "广州",
+    "ownership": "公办",
+    "url": "https://rsc.gtcfla.edu.cn/rczp/gkzp.htm",
+    "lastChecked": "2026-08-04T13:18:56.768Z",
+    "health": "正常",
+    "message": "发现 0 个招聘公告链接"
+  },
+  {
+    "id": "gdpt",
+    "school": "广东职业技术学院",
+    "schoolLevel": "高职院校",
+    "city": "佛山",
+    "ownership": "公办",
+    "url": "https://zp.gdpt.edu.cn/product/recruit/website/RecruitIndex.jsp?FM_SYS_ID=gdzy",
+    "lastChecked": "2026-08-04T13:18:56.768Z",
+    "health": "正常",
+    "message": "发现 0 个招聘公告链接"
+  },
+  {
+    "id": "gdsspt",
+    "school": "广东松山职业技术学院",
+    "schoolLevel": "高职院校",
+    "city": "韶关",
+    "ownership": "公办",
+    "url": "https://www.gdsspt.edu.cn/zpgg.htm",
+    "lastChecked": "2026-08-04T13:18:56.768Z",
+    "health": "正常",
+    "message": "发现 1 个招聘公告链接"
+  },
+  {
+    "id": "szpu",
+    "school": "深圳职业技术大学",
+    "schoolLevel": "职业本科",
+    "city": "深圳",
+    "ownership": "公办",
+    "url": "https://www.szpu.edu.cn/jyjx1/rczp.htm",
+    "lastChecked": "2026-08-04T13:18:56.768Z",
+    "health": "正常",
+    "message": "发现 0 个招聘公告链接"
+  },
+  {
+    "id": "gdfs",
+    "school": "广东女子职业技术学院",
+    "schoolLevel": "高职院校",
+    "city": "广州",
+    "ownership": "公办",
+    "url": "https://www.gdfs.edu.cn/gkzp/49.htm",
+    "lastChecked": "2026-08-04T13:18:56.768Z",
+    "health": "正常",
+    "message": "发现 0 个招聘公告链接"
+  },
+  {
+    "id": "gdufs",
+    "school": "广东外语外贸大学",
+    "schoolLevel": "本科院校",
+    "city": "广州",
+    "ownership": "公办",
+    "url": "https://rsc.gdufs.edu.cn/zpxx.htm",
+    "lastChecked": "2026-08-04T13:18:56.768Z",
+    "health": "正常",
+    "message": "发现 1 个招聘公告链接"
+  },
+  {
+    "id": "gdut",
+    "school": "广东工业大学",
+    "schoolLevel": "本科院校",
+    "city": "广州",
+    "ownership": "公办",
+    "url": "https://hr.gdut.edu.cn/",
+    "lastChecked": "2026-08-04T13:18:56.768Z",
+    "health": "正常",
+    "message": "发现 0 个招聘公告链接"
+  }
+]
