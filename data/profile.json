@@ -1,0 +1,23 @@
+{
+  "degree": "硕士研究生",
+  "major": "国际中文教育",
+  "graduationYear": 2027,
+  "partyRequirementMet": false,
+  "studentCadreRequirementMet": false,
+  "certificates": [],
+  "preferredCities": [
+    "广州",
+    "深圳",
+    "佛山",
+    "东莞",
+    "珠海",
+    "惠州",
+    "中山"
+  ],
+  "targetOwnership": "公办",
+  "targetEstablishment": "事业编制",
+  "targetLevels": [
+    "高职院校",
+    "职业本科"
+  ]
+}
