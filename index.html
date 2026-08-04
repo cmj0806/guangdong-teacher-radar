@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="面向国际中文教育硕士的广东高校招聘信息追踪表。" />
+  <title>广东公办大专教师招聘雷达</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav shell"><a class="brand" href="#top"><span class="brand-mark">加</span><span>广东教师招聘雷达</span></a><span class="nav-date" id="todayText"></span></nav>
+    <div class="hero-content shell" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">国际中文教育硕士 · 2027届 · 广东</p>
+        <h1>把分散的招聘公告，<br /><span>整理成一张能行动的表。</span></h1>
+        <p class="hero-description">优先追踪广东公办高职院校、事业编制岗位，并补充专业高度匹配的高校机会。</p>
+        <div class="hero-actions">
+          <button class="primary-button" id="syncButton" type="button"><span class="button-icon">↻</span>立即检查官网更新</button>
+          <button class="secondary-button" id="exportButton" type="button">导出当前表格</button>
+        </div>
+        <p class="sync-message" id="syncMessage" aria-live="polite"></p>
+      </div>
+      <aside class="profile-card" aria-label="求职目标">
+        <p class="card-kicker">默认筛选条件</p>
+        <div class="profile-row"><span>学历 / 专业</span><strong>硕士 · 国际中文教育</strong></div>
+        <div class="profile-row"><span>毕业时间</span><strong>预计 2027 年</strong></div>
+        <div class="profile-row"><span>城市范围</span><strong>广深及珠三角重点城市</strong></div>
+        <div class="profile-row"><span>学校范围</span><strong>公办高职 / 职业本科</strong></div>
+        <div class="profile-row"><span>岗位优先</span><strong>事业编制</strong></div>
+        <p class="profile-note">系统会综合岗位专业、城市和硬性资格条件给出匹配提示。</p>
+      </aside>
+    </div>
+  </header>
+
+  <main class="shell main-content">
+    <section class="stats-grid" aria-label="招聘概览">
+      <article class="stat-card"><span>当前进行中</span><strong id="openCount">0</strong><small>条公告</small></article>
+      <article class="stat-card"><span>事业编制</span><strong id="establishmentCount">0</strong><small>条记录</small></article>
+      <article class="stat-card"><span>画像适配较高</span><strong id="matchCount">0</strong><small>个机会</small></article>
+      <article class="stat-card"><span>监测官网</span><strong id="sourceCount">0</strong><small>个来源</small></article>
+    </section>
+
+    <section class="notice" aria-label="重要说明"><span class="notice-icon">!</span><p><strong>先看结论：</strong>2026 年已发布岗位主要用于摸清考试规律；真正适合2027届毕业生的批次预计集中在毕业季前后。页面中的“可能匹配”不等于一定能报，最终取决于岗位表专业代码、毕业时间及其他资格条件。</p></section>
+
+    <section class="tracker-section">
+      <div class="section-heading"><div><p class="section-kicker">Recruitment tracker</p><h2>招聘信息总表</h2></div><p id="resultSummary" class="result-summary"></p></div>
+      <div class="filters" aria-label="筛选招聘信息">
+        <label class="search-control"><span class="sr-only">搜索学校或岗位</span><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="搜索学校、城市、岗位或专业…" /></label>
+        <label><span>学校性质</span><select id="ownershipFilter"><option value="all">全部</option><option value="公办" selected>公办</option><option value="民办">民办</option></select></label>
+        <label><span>编制情况</span><select id="establishmentFilter"><option value="all">全部</option><option value="事业编制">事业编制</option><option value="非编制">非编制</option><option value="待核实">待核实</option></select></label>
+        <label><span>专业匹配</span><select id="matchFilter"><option value="all">全部</option><option value="明确匹配">明确匹配</option><option value="专业不限">专业不限</option><option value="可能匹配">可能匹配</option><option value="待核实">待核实</option></select></label>
+        <label><span>招聘状态</span><select id="statusFilter"><option value="all">全部</option><option value="进行中">进行中</option><option value="待核实">待核实</option><option value="已截止">已截止</option></select></label>
+        <label><span>城市范围</span><select id="cityFilter"><option value="preferred" selected>优先城市</option><option value="all">广东全省</option></select></label>
+        <label class="check-control"><input id="collegeOnlyFilter" type="checkbox" checked /><span>只看高职/职本</span></label>
+      </div>
+      <div class="table-wrap">
+        <table><thead><tr><th>收藏</th><th>学校</th><th>性质</th><th>编制</th><th>可报岗位 / 专业匹配</th><th>报名 / 考试时间</th><th>考试形式</th><th>招聘人数</th><th>工资情况</th><th>状态</th><th>官网</th></tr></thead><tbody id="jobsBody"></tbody></table>
+        <div id="emptyState" class="empty-state" hidden><strong>暂时没有符合条件的岗位</strong><span>可以放宽筛选条件，或点击“立即检查官网更新”。</span></div>
+      </div>
+    </section>
+
+    <section class="sources-section">
+      <div class="section-heading compact"><div><p class="section-kicker">Official sources</p><h2>官网监测状态</h2></div><p class="result-summary">本地运行时可手动检查；部署后可设置每日定时任务。</p></div>
+      <div class="source-grid" id="sourceGrid"></div>
+    </section>
+  </main>
+
+  <dialog id="detailDialog"><button class="dialog-close" id="dialogClose" type="button" aria-label="关闭">×</button><div id="dialogContent"></div></dialog>
+  <footer><div class="shell footer-content"><span>广东高校招聘信息辅助工具</span><span>数据只作求职筛选辅助，报名以学校最新公告为准。</span></div></footer>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

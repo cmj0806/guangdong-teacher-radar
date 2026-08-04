@@ -1,0 +1,13 @@
+{
+  "name": "guangdong-teacher-radar",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "sync": "node scripts/sync-jobs.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
